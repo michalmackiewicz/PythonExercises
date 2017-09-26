@@ -2,11 +2,11 @@
 
 #convert decimal number to binary string
 
-def dec2bin(x):
+def dec2bin(number):
   result = ''
-  while x>0:
-    result = str(x%2) + result
-    x = int(x / 2)
+  while number>0:
+    result = str(number % 2) + result
+    x = int(number / 2)
   return result
 
 def main():
