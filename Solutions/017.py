@@ -10,8 +10,9 @@
 
 def main():
   print ("Enter transactions, press enter twice to end")
+
   amount = 0
-  x = ' '
+
   while True:
     x = input()
     if not x:
