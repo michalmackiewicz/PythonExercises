@@ -30,7 +30,7 @@ def main():
     x = input()
     if not x:
       break
-    #TODO: we may need to check if there are three separate fields (two colons)
+
     if re.search(r'^.+,.+,.+$',x):
       persons.append(tuple(x.split(',')))
     else:
