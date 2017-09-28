@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 
 from operator import itemgetter, attrgetter, methodcaller
+import re
 
 # You are required to write a program to sort the (name, age, height) tuples by ascending order
 # where name is string, age and height are numbers. The tuples are input by console. The sort criteria is:
@@ -23,14 +24,17 @@ from operator import itemgetter, attrgetter, methodcaller
 
 
 def main():
-  print ("Enter text, press enter twice to end")
+  print ("Enter name,age and score separated by colons, press enter twice to end")
   persons = []
   while True:
     x = input()
     if not x:
       break
-    # we may need to check if there are three separate fields (two colons)
-    persons.append(tuple(x.split(',')))
+    #TODO: we may need to check if there are three separate fields (two colons)
+    if re.search(r'^.+,.+,.+$',x):
+      persons.append(tuple(x.split(',')))
+    else:
+      print ("Enter name,age and score separated by colons.")
 
   sortedpersons = sorted(persons, key=itemgetter(0,1,2))
   
