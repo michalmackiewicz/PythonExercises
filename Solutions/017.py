@@ -17,22 +17,29 @@ def main():
     x = input()
     if not x:
       break
+
+    if ' ' not in x:
+      print("Missing value")
+      continue
+
     transaction = x.split(' ')
 
     try:
-      if transaction[0] == 'D':
-        amount += int(transaction[1])
-
-      elif transaction[0] == 'W':
-        amount -= int(transaction[1])
-
-      else:
-        print("Unknown transaction")
+      value = int(transaction[1])
     except ValueError:
       print ("Wrong numeric value: "+transaction[1])
+      continue
+
+    if transaction[0] == 'D':
+      amount += value
+
+    elif transaction[0] == 'W':
+      amount -= value
+
+    else:
+      print("Unknown transaction")
 
   print(str(amount))
 
 if __name__ == '__main__':
   main()
-
