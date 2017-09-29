@@ -5,7 +5,7 @@
 # Use [n1:n2] notation to get a slice from a tuple.
 
 def main():
-  x = (1,2,3,4,5,6,7,8,9,10)
+  x = input()
 
   middle = int(len(x)/2)
 

@@ -265,3 +265,6 @@ in one line and the last half values in one line.
 Hints:
 
 Use [n1:n2] notation to get a slice from a tuple.
+
+# 023
+Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
