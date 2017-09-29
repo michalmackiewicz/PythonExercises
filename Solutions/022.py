@@ -7,11 +7,10 @@
 def main():
   x = (1,2,3,4,5,6,7,8,9,10)
 
-  last = len(x)
-  middle = int(last/2)
+  middle = int(len(x)/2)
 
-  print(x[0:middle])
-  print(x[middle:last])
+  print(x[:middle])
+  print(x[middle:])
 
 if __name__ == '__main__':
   main()
