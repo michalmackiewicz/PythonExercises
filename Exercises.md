@@ -268,3 +268,23 @@ Use [n1:n2] notation to get a slice from a tuple.
 
 # 023
 Write a program which accepts a string as input to print "Yes" if the string is "yes" or "YES" or "Yes", otherwise print "No". 
+
+# 024
+Define a class named Circle which can be constructed by a radius. The Circle class has a method which can compute the area. 
+Use def methodName(self) to define a method.
+
+# 025
+Define a class named Shape and its subclass Square. The Square class has an init function which takes a length as argument. Both classes have a area function which can print the area of the shape where Shape's area is 0 by default.
+To override a method in super class, we can define a method with the same name in the super class.
+
+# 026
+Assuming that we have some email addresses in the "username@companyname.com" format, please write program to print the company name of a given email address. Both user names and company names are composed of letters only.
+
+Example:
+If the following email address is given as input to the program:
+
+john@google.com
+
+Then, the output of the program should be:
+
+google
