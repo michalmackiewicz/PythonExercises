@@ -19,7 +19,7 @@ def main():
     return 1
 
   n = int(sys.argv[1])
-  result = 0
+  result = 0.0
 
   if n>0:
   	for x in range(n):

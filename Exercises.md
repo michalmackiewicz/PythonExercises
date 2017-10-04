@@ -308,3 +308,16 @@ Then, the output of the program should be:
 In case of input data being supplied to the question, it should be assumed to be a console input.
 Hints:
 Use float() to convert an integer to a float
+
+# 029
+
+Write a program to compute:
+f(n)=f(n-1)+100 when n>0
+and f(0)=1
+with a given n input by console (n>0).
+Example:
+If the following n is given as input to the program:
+5
+Then, the output of the program should be:
+501
+
