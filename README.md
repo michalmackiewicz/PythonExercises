@@ -5,5 +5,3 @@ Exercises mostly from
 https://github.com/zhiwehu/Python-programming-exercises
 
 Solutions made in python 3
-
-___
